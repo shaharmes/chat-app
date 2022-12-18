@@ -98,3 +98,23 @@
 .bottom-spacer {
   height: 110px;
 }
+
+.popup {
+  width: 400px;
+  height: 440px;
+  background: lavenderblush;
+  padding: 20px;
+  position: fixed;
+  top: 100px;
+  left: calc(50% - 200px);
+
+  .close {
+    text-align: center;
+    width: 1.4em;
+    height: 1.4em;
+    float: right;
+    background: rgba(59, 251, 211, 0.67);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

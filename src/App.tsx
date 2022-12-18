@@ -25,9 +25,9 @@ const useMountEffect = (effect: EffectCallback) => useEffect(effect, []);
 function App() {
   const [messages, setMessages] = useState(mockPosts as Message[]);
   const [currentUser, setCurrentUser] = useState({} as User);
+  const [selectedUser, setSelectedUser] = useState(null as User | null);
 
   const myRef = useRef(null);
-  const userSelectRef = useRef(null);
 
   function selectUser(id: string) {
     const currentUser = users.find(user => user.id === +id);
@@ -66,7 +66,7 @@ function App() {
                 month: "numeric",
                 day: "numeric", hour: "2-digit", minute: "2-digit"
               })}</span>
-              <span className="message-author">{message.user.name}</span>
+              <span className="message-author" onClick={() => setSelectedUser(message.user)}>{message.user.name}</span>
               <span className="message-likes">{message.likes}</span>
             </div>
             <div className="message-body">
@@ -75,7 +75,7 @@ function App() {
           </div>
         ))}
 
-        <div className="bottom-spacer" ref={myRef} />
+        <div className="bottom-spacer" ref={myRef}/>
       </div>
 
       <div className="write-message">
@@ -88,6 +88,12 @@ function App() {
         <input name="message" className="message-input" onKeyUp={addMessage}/>
 
       </div>
+
+      {selectedUser && (<div className="popup">
+        <div className="close" onClick={() => setSelectedUser(null)}>X</div>
+        <h2>{selectedUser?.name}</h2>
+        <p>{JSON.stringify(selectedUser)}</p>
+      </div>)}
     </div>
   )
 }
