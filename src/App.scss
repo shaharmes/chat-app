@@ -76,7 +76,7 @@
     }
 
     &:last-child {
-      margin-bottom: 90px;
+      //margin-bottom: 90px;
     }
   }
 }
@@ -93,4 +93,8 @@
   .message-input {
     width: calc(100% - 4rem);
   }
+}
+
+.bottom-spacer {
+  height: 110px;
 }

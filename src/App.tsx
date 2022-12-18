@@ -1,19 +1,58 @@
-import { useState } from 'react'
+import { EffectCallback, useEffect, useRef, useState } from 'react'
 import './App.scss'
 import { mockPosts } from './assets/mockPosts'
 import { users } from './assets/users';
 
-/*const fullPosts = posts.map((post, index) => {
-  const randomUser = Math.floor(Math.random()*10);
-  console.log(randomUser);
-  const now = new Date();
-  return {...post, user: users[randomUser], timestamp: now.setMinutes(now.getMinutes() - 200 + index), likes: randomUser};
-});
+interface User {
+  id: number;
+  name: string;
 
-console.log(fullPosts)*/
+  [key: string]: string | object | number;
+}
+
+interface Message {
+  id: number;
+  body: string;
+  user: User;
+  timestamp: number | Date;
+  likes: number;
+
+  [key: string]: string | object | number;
+}
+
+const useMountEffect = (effect: EffectCallback) => useEffect(effect, []);
 
 function App() {
-  const [messages, setMessages] = useState(mockPosts);
+  const [messages, setMessages] = useState(mockPosts as Message[]);
+  const [currentUser, setCurrentUser] = useState({} as User);
+
+  const myRef = useRef(null);
+  const userSelectRef = useRef(null);
+
+  function selectUser(id: string) {
+    const currentUser = users.find(user => user.id === +id);
+    currentUser && setCurrentUser(currentUser);
+    console.log(currentUser)
+  }
+
+  // scroll to last message
+  const executeScroll = () => myRef.current.scrollIntoView();
+  useMountEffect(executeScroll); // Scroll on mount
+
+  function addMessage(event: any) {
+    if (event.key === 'Enter') {
+      event.target.value && setMessages([
+        ...messages, {
+          id: messages.length + 1,
+          timestamp: new Date(),
+          likes: 0,
+          body: event.target.value,
+          user: currentUser
+        }
+      ]);
+      executeScroll();
+    }
+  }
 
   return (
 
@@ -36,16 +75,17 @@ function App() {
           </div>
         ))}
 
+        <div className="bottom-spacer" ref={myRef} />
       </div>
 
       <div className="write-message">
-        <select>
+        <select onChange={(event) => selectUser(event.target.value)}>
           {users.map(user => (
-            <option id={user.name}>{user.name}</option>
+            <option id={user.name} key={user.id} value={user.id}>{user.name}</option>
           ))}
         </select>
 
-        <input name="message" className="message-input"/>
+        <input name="message" className="message-input" onKeyUp={addMessage}/>
 
       </div>
     </div>
