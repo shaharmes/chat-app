@@ -64,7 +64,23 @@
       background: #61dafbaa;
       padding: 0 4px;
 
-      .message-likes {
+      .message-like {
+        visibility: hidden;
+      }
+
+      &:hover .message-like {
+        visibility: initial;
+      }
+
+      .message-author, .message-likes, .message-like {
+        padding: 0 4px;
+        cursor: pointer;
+        &:hover {
+          background: rgba(59, 251, 211, 0.67);
+        }
+      }
+
+      .message-likes, .message-like {
         &:before {
           content: "⭐";
         }
@@ -73,10 +89,6 @@
 
     .message-body {
       padding: 0 4px;
-    }
-
-    &:last-child {
-      //margin-bottom: 90px;
     }
   }
 }

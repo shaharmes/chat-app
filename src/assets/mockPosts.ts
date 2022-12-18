@@ -28,7 +28,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671344833575,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 1,
@@ -59,7 +68,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671344893575,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 1,
@@ -90,7 +105,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671344953575,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 1,
@@ -121,7 +139,17 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345013575,
-    "likes": 9
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
   {
     "userId": 1,
@@ -152,7 +180,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345073575,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 1,
@@ -183,7 +220,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345133575,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 1,
@@ -214,7 +257,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345193575,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 1,
@@ -245,7 +291,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345253575,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 1,
@@ -276,7 +331,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345313575,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 1,
@@ -307,7 +371,12 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345373575,
-    "likes": 4
+    "likes": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "userId": 2,
@@ -338,7 +407,12 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345433575,
-    "likes": 4
+    "likes": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "userId": 2,
@@ -369,7 +443,12 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345493575,
-    "likes": 4
+    "likes": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "userId": 2,
@@ -400,7 +479,14 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345553575,
-    "likes": 6
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   {
     "userId": 2,
@@ -431,7 +517,17 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345613575,
-    "likes": 9
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
   {
     "userId": 2,
@@ -462,7 +558,12 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345673575,
-    "likes": 4
+    "likes": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "userId": 2,
@@ -493,7 +594,17 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345733575,
-    "likes": 9
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
   {
     "userId": 2,
@@ -524,7 +635,7 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345793575,
-    "likes": 0
+    "likes": []
   },
   {
     "userId": 2,
@@ -555,7 +666,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345853575,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 2,
@@ -586,7 +705,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345913575,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 2,
@@ -617,7 +739,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671345973575,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 3,
@@ -648,7 +778,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346033575,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 3,
@@ -679,7 +812,17 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346093575,
-    "likes": 9
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
   {
     "userId": 3,
@@ -710,7 +853,7 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346153575,
-    "likes": 0
+    "likes": []
   },
   {
     "userId": 3,
@@ -741,7 +884,7 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346213575,
-    "likes": 0
+    "likes": []
   },
   {
     "userId": 3,
@@ -772,7 +915,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346273575,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 3,
@@ -803,7 +954,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346333575,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 3,
@@ -834,7 +991,17 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346393575,
-    "likes": 9
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
   {
     "userId": 3,
@@ -865,7 +1032,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346453575,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 3,
@@ -896,7 +1071,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346513575,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 3,
@@ -927,7 +1111,17 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346573575,
-    "likes": 9
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
   {
     "userId": 4,
@@ -958,7 +1152,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346633575,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 4,
@@ -989,7 +1186,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346693576,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 4,
@@ -1020,7 +1225,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346753576,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 4,
@@ -1051,7 +1262,7 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346813576,
-    "likes": 0
+    "likes": []
   },
   {
     "userId": 4,
@@ -1082,7 +1293,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346873576,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 4,
@@ -1113,7 +1327,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346933576,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 4,
@@ -1144,7 +1364,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671346993576,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 4,
@@ -1175,7 +1398,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347053576,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 4,
@@ -1206,7 +1433,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347113576,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 4,
@@ -1237,7 +1468,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347173576,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 5,
@@ -1268,7 +1505,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347233576,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 5,
@@ -1299,7 +1539,12 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347293576,
-    "likes": 4
+    "likes": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "userId": 5,
@@ -1330,7 +1575,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347353576,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 5,
@@ -1361,7 +1615,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347413576,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 5,
@@ -1392,7 +1652,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347473576,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 5,
@@ -1423,7 +1691,14 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347533576,
-    "likes": 6
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   {
     "userId": 5,
@@ -1454,7 +1729,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347593576,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 5,
@@ -1485,7 +1764,9 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347653576,
-    "likes": 1
+    "likes": [
+      1
+    ]
   },
   {
     "userId": 5,
@@ -1516,7 +1797,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347713576,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 5,
@@ -1547,7 +1836,14 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347773576,
-    "likes": 6
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   {
     "userId": 6,
@@ -1578,7 +1874,14 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347833576,
-    "likes": 6
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   {
     "userId": 6,
@@ -1609,7 +1912,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347893576,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 6,
@@ -1640,7 +1947,17 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671347953576,
-    "likes": 9
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
   {
     "userId": 6,
@@ -1671,7 +1988,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348013576,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 6,
@@ -1702,7 +2023,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348073576,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 6,
@@ -1733,7 +2060,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348133576,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 6,
@@ -1764,7 +2099,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348193576,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 6,
@@ -1795,7 +2134,17 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348253576,
-    "likes": 9
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
   {
     "userId": 6,
@@ -1826,7 +2175,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348313576,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 6,
@@ -1857,7 +2214,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348373576,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 7,
@@ -1888,7 +2249,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348433576,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 7,
@@ -1919,7 +2284,7 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348493576,
-    "likes": 0
+    "likes": []
   },
   {
     "userId": 7,
@@ -1950,7 +2315,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348553576,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 7,
@@ -1981,7 +2355,9 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348613576,
-    "likes": 1
+    "likes": [
+      1
+    ]
   },
   {
     "userId": 7,
@@ -2012,7 +2388,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348673576,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 7,
@@ -2043,7 +2422,14 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348733576,
-    "likes": 6
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   {
     "userId": 7,
@@ -2074,7 +2460,12 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348793576,
-    "likes": 4
+    "likes": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "userId": 7,
@@ -2105,7 +2496,14 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348853576,
-    "likes": 6
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   {
     "userId": 7,
@@ -2136,7 +2534,14 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348913576,
-    "likes": 6
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   {
     "userId": 7,
@@ -2167,7 +2572,7 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671348973577,
-    "likes": 0
+    "likes": []
   },
   {
     "userId": 8,
@@ -2198,7 +2603,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349033577,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 8,
@@ -2229,7 +2642,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349093577,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 8,
@@ -2260,7 +2677,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349153577,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 8,
@@ -2291,7 +2714,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349213577,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 8,
@@ -2322,7 +2749,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349273577,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 8,
@@ -2353,7 +2783,9 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349333577,
-    "likes": 1
+    "likes": [
+      1
+    ]
   },
   {
     "userId": 8,
@@ -2384,7 +2816,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349393577,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 8,
@@ -2415,7 +2851,12 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349453577,
-    "likes": 4
+    "likes": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "userId": 8,
@@ -2446,7 +2887,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349513577,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 8,
@@ -2477,7 +2922,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349573577,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 9,
@@ -2508,7 +2962,10 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349633577,
-    "likes": 2
+    "likes": [
+      1,
+      2
+    ]
   },
   {
     "userId": 9,
@@ -2539,7 +2996,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349693577,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 9,
@@ -2570,7 +3036,7 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349753577,
-    "likes": 0
+    "likes": []
   },
   {
     "userId": 9,
@@ -2601,7 +3067,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349813577,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 9,
@@ -2632,7 +3106,12 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349873577,
-    "likes": 4
+    "likes": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "userId": 9,
@@ -2663,7 +3142,9 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349933577,
-    "likes": 1
+    "likes": [
+      1
+    ]
   },
   {
     "userId": 9,
@@ -2694,7 +3175,14 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671349993577,
-    "likes": 6
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   {
     "userId": 9,
@@ -2725,7 +3213,12 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350053577,
-    "likes": 4
+    "likes": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "userId": 9,
@@ -2756,7 +3249,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350113577,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 9,
@@ -2787,7 +3286,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350173577,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 10,
@@ -2818,7 +3326,15 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350233577,
-    "likes": 7
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   },
   {
     "userId": 10,
@@ -2849,7 +3365,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350293577,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 10,
@@ -2880,7 +3400,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350353577,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 10,
@@ -2911,7 +3440,11 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350413577,
-    "likes": 3
+    "likes": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "userId": 10,
@@ -2942,7 +3475,13 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350473577,
-    "likes": 5
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "userId": 10,
@@ -2973,7 +3512,16 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350533577,
-    "likes": 8
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   },
   {
     "userId": 10,
@@ -3004,7 +3552,14 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350593577,
-    "likes": 6
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   {
     "userId": 10,
@@ -3035,7 +3590,17 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350653577,
-    "likes": 9
+    "likes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
   {
     "userId": 10,
@@ -3066,7 +3631,9 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350713577,
-    "likes": 1
+    "likes": [
+      1
+    ]
   },
   {
     "userId": 10,
@@ -3097,6 +3664,8 @@ export const mockPosts = [
       }
     },
     "timestamp": 1671350773577,
-    "likes": 1
+    "likes": [
+      3, 4, 7, 1
+    ]
   }
-]
+];
