@@ -1,44 +1,29 @@
-import { EffectCallback, useEffect, useRef, useState } from 'react'
+import {useEffect, useRef, useState} from 'react'
 import './App.scss'
 import { mockPosts } from './assets/mockPosts'
 import { users } from './assets/users';
-
-interface User {
-  id: number;
-  name: string;
-
-  [key: string]: string | object | number;
-}
-
-interface Message {
-  id: number;
-  body: string;
-  user: User;
-  timestamp: number | Date;
-  likes: number[];
-
-  [key: string]: string | object | number;
-}
-
-const useMountEffect = (effect: EffectCallback) => useEffect(effect, []);
+import {Message} from "./types/message";
+import {User} from "./types/user";
 
 function App() {
-  const [messages, setMessages] = useState(mockPosts as Message[]);
-  const [currentUser, setCurrentUser] = useState(users[0] as User);
-  const [selectedUser, setSelectedUser] = useState(null as User | null);
-  const [selectedMessage, setSelectedMessage] = useState(null as Message | null);
-  const [showMessageDetails, setShowMessageDetails] = useState(false);
+  const [messages, setMessages] = useState<Message[]>(mockPosts);
+  const [currentUser, setCurrentUser] = useState<User>(users[0]);
+  const [selectedUser, setSelectedUser] = useState<User | null>(null);
+  const [selectedMessage, setSelectedMessage] = useState<Message | null>(null);
+  const [showMessageDetails, setShowMessageDetails] = useState<boolean>(false);
 
-  const myRef = useRef(null);
+  const myRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if(myRef.current) {
+      myRef.current.scrollIntoView()
+    }
+  }, [messages])
 
   function selectUser(id: string) {
     const currentUser = users.find(user => user.id === +id);
     currentUser && setCurrentUser(currentUser);
   }
-
-  // scroll to last message
-  const executeScroll = () => myRef.current.scrollIntoView();
-  useMountEffect(executeScroll); // Scroll on mount
 
   function addMessage(event: any) {
     if (event.key === 'Enter') {
@@ -51,7 +36,6 @@ function App() {
           user: currentUser
         }
       ]);
-      executeScroll();
     }
   }
 
