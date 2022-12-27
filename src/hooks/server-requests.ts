@@ -22,15 +22,6 @@ export async function getMessages() {
 }
 
 /**
- * GET request to get the full list of users - id + name
- **/
-export async function getUsers() {
-  // todo: replace this with fetch to get the user list from the server
-  const { mockUsers } = await import(`${endpoint}/mockUsers`);
-  return mockUsers;
-}
-
-/**
  * GET request to get the full details of a user
  **/
 export async function getUserDetails(userId: number) {

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Message } from '../types/message';
 import { User } from '../types/user';
-import { addNewMessage, changeMessageLikes, getMessages, getUserDetails, getUsers } from './server-requests';
+import { addNewMessage, changeMessageLikes, getMessages, getUserDetails } from './server-requests';
+import { mockUsers } from '../assets/mockUsers';
 
 export function useChat() {
   const [users, setUsers] = useState<User[]>([]);
@@ -9,10 +10,8 @@ export function useChat() {
   const [currentUser, setCurrentUser] = useState<User>();
 
   useEffect(() => {
-    getUsers().then(userList => {
-      setUsers(userList);
-      setCurrentUser(userList[0]);
-    });
+    setUsers(mockUsers);
+    setCurrentUser(mockUsers[0]);
 
     getMessages().then(messageList => {
       setMessages(messageList);

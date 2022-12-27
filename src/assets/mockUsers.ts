@@ -1,3 +1,5 @@
+// Don't copy this to the server. It's needed for mocking the current user only.
+
 export const mockUsers = [
   {
     "id": 1,
