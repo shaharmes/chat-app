@@ -1,11 +1,9 @@
-import {User} from "./user";
-
 export interface Message {
   id: number;
   body: string;
-  user: User;
+  authorId: number;
+  authorName?: string;
   timestamp: number | Date;
-  likes: number[];
-
-  [key: string]: string | object | number;
+  likes?: number[];
+  status?: 'pending' | 'ok' | 'error';
 }
