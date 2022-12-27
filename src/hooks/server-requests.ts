@@ -14,12 +14,23 @@ export async function getMessages() {
   // todo: this should be implemented in the server. Chat Messages should already have the authors' names.
   // todo: remove this mapping when getting the data from the server
   const mockMessagesWithNames = mockMessages.map((message: Message) => {
-    const authorName = mockUsers.find(user => user.id === message.authorId)?.name;
+    const author = mockUsers.find(user => user.id === message.authorId);
+    const authorName = author && author.name;
     return { ...message, authorName };
   });
 
   return mockMessagesWithNames;
 }
+
+/**
+ * GET request to get the full list of users - id + name
+ **/
+export async function getUsers() {
+  // todo: replace this with fetch to get the user list from the server
+  const { mockUsers } = await import(`${endpoint}/mockUsers`);
+  return mockUsers;
+}
+
 
 /**
  * GET request to get the full details of a user

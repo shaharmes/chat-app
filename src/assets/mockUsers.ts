@@ -1,4 +1,5 @@
-// Don't copy this to the server. It's needed for mocking the current user only.
+// Don't copy this to the server. 
+// Instead, implement in the server creating this list out of the user details array.
 
 export const mockUsers = [
   {
