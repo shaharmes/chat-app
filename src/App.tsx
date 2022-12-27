@@ -1,6 +1,5 @@
-import {useEffect, useRef} from 'react'
 import './App.scss'
-import { users } from './assets/users';
+import { useEffect, useRef } from 'react'
 import { useChat } from './hooks/useChat';
 
 function App() {
@@ -10,11 +9,10 @@ function App() {
   const myRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if(myRef.current) {
+    if (myRef.current) {
       myRef.current.scrollIntoView()
     }
   }, [chatApi.messages]);
-
 
 
   return (
@@ -28,13 +26,25 @@ function App() {
                 year: "numeric",
                 month: "numeric",
                 day: "numeric", hour: "2-digit", minute: "2-digit"
-              })}</span>
-              <span className="message-author" onClick={() => chatApi.setSelectedUser(message.user)}>{message.user.name}</span>
+              })}
+                {message.status && <span>
+                  {message.status === 'ok' ? '✔️' : '🕒'}
+                </span>}
+              </span>
+
+              <span className="message-author"
+                    onClick={() => chatApi.openAuthorDetails({
+                      id: message.authorId,
+                      name: message.authorName!
+                    })}>{message.authorName}</span>
+
               <span className="message-like" onClick={() => chatApi.toggleLike(message)}>Like</span>
+
               <span className="message-likes" onClick={() => {
                 chatApi.setSelectedMessage(message);
                 chatApi.setShowMessageDetails(true);
-              }}>{message.likes.length}</span>
+              }}>{message.likes!.length}</span>
+
             </div>
             <div className="message-body">
               {message.body}
@@ -46,21 +56,24 @@ function App() {
       </div>
 
       <div className="write-message">
-        <select onChange={(event) => chatApi.selectUser(event.target.value)}>
-          {users.map(user => (
+        <select onChange={(event) => chatApi.selectUser(event.target.value)}
+                value={chatApi.currentUser?.id}>
+          {chatApi.users?.map(user => (
             <option id={user.name} key={user.id} value={user.id}>{user.name}</option>
           ))}
         </select>
 
         <input name="message" className="message-input" onKeyUp={chatApi.addMessage}/>
-
       </div>
 
-      {chatApi.selectedUser && (
+      {chatApi.selectedAuthor && (
         <div className="popup">
-          <div className="close" onClick={() => chatApi.setSelectedUser(null)}>X</div>
-          <h2>{chatApi.selectedUser?.name}</h2>
-          <p>{JSON.stringify(chatApi.selectedUser)}</p>
+          <div className="close" onClick={() => chatApi.setSelectedAuthor(null)}>X</div>
+          <h2>{chatApi.selectedAuthor?.name}</h2>
+          {chatApi.selectedAuthor.username ?
+           <p>{JSON.stringify(chatApi.selectedAuthor)}</p> :
+           <div className="spinner"/>
+          }
         </div>)}
 
       {chatApi.showMessageDetails && chatApi.selectedMessage && (
@@ -68,8 +81,8 @@ function App() {
           <div className="close" onClick={() => chatApi.setShowMessageDetails(false)}>X</div>
           <h2>Liked By:</h2>
           <ul>
-            {chatApi.selectedMessage.likes.map((userId, index) => {
-              const likedUser = users.find(user => user.id === userId);
+            {chatApi.selectedMessage.likes!.map((userId) => {
+              const likedUser = chatApi.users.find(user => user.id === userId);
               return likedUser && (
                 <li key={likedUser.id}>{likedUser.name}</li>
               )
