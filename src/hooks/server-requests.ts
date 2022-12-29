@@ -9,15 +9,20 @@ const endpoint = '../assets/'; // todo: add endpoint (server) address (starting 
  **/
 export async function getMessages() {
   // todo: replace this with fetch to get the messages from the server
-  const { mockMessages } = await import(`${endpoint}/mockMessages`);
+  // const { mockMessages } = await import(`${endpoint}/mockMessages`);
+
+  const mockMessagesWithNames = await fetch('http://localhost:3001/messages').then(res => res.json());
+
+  console.log(mockMessagesWithNames)
+
 
   // todo: this should be implemented in the server. Chat Messages should already have the authors' names.
   // todo: remove this mapping when getting the data from the server
-  const mockMessagesWithNames = mockMessages.map((message: Message) => {
-    const author = mockUsers.find(user => user.id === message.authorId);
-    const authorName = author && author.name;
-    return { ...message, authorName };
-  });
+  // const mockMessagesWithNames = mockMessages.map((message: Message) => {
+  //   const author = mockUsers.find(user => user.id === message.authorId);
+  //   const authorName = author && author.name;
+  //   return { ...message, authorName };
+  // });
 
   return mockMessagesWithNames;
 }
@@ -27,8 +32,8 @@ export async function getMessages() {
  **/
 export async function getUsers() {
   // todo: replace this with fetch to get the user list from the server
-  const { mockUsers } = await import(`${endpoint}/mockUsers`);
-  return mockUsers;
+  const users = await fetch('http://localhost:3001/users').then(res => res.json());
+  return users;
 }
 
 
@@ -39,15 +44,25 @@ export async function getUserDetails(userId: number) {
   // todo: replace this with fetch to get the user details from the server.
   //  For mocking example, we're calling an external JSON service.
   //  You can use mockUserDetails.ts for the list of user details in the server.
-  const res = await fetch(`https://jsonplaceholder.typicode.com/users?id=${userId}`);
-  return (await res.json())[0];
+  const res = await fetch(`http://localhost:3001/users/${userId}`).then(res => res.json());
+  return res;
 }
 
 /**
  * POST request to add a message. The message contains: id, body, timestamp, authorId
  **/
 export async function addNewMessage(message: Message) {
-  // todo: implement sending a new message to the server
+  
+  //fetch from server newMsg
+
+  const res = await fetch('http://localhost:3001/newMsg', {
+    method: 'POST',
+    headers: { 'content-Type': 'application/json'},
+    body: JSON.stringify(message)
+  })
+
+
+
 }
 
 /**
@@ -55,4 +70,10 @@ export async function addNewMessage(message: Message) {
  **/
 export async function changeMessageLikes(messageId: number, userId: number, like: boolean) {
   // todo: implement sending a rquest to change the like of a message by the user
+
+  const res = await fetch('http://localhost:3001/updateLike', {
+    method: 'POST',
+    headers: { 'content-Type': 'application/json'},
+    body: JSON.stringify({messageId, userId, like})
+  })
 }
